@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation for Balance</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            slate: '#0f172a',     /* Deep navy/slate for headings */
+                            text: '#475569',      /* Softer slate for body text */
+                            teal: '#0d9488',      /* Calm premium teal */
+                            tealHover: '#0f766e', /* Darker teal for button hover */
+                            bg: '#f8fafc'         /* Very subtle cool off-white */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-bg text-brand-text font-sans antialiased min-h-screen flex flex-col selection:bg-brand-teal selection:text-white">
+
+    <div class="flex-grow flex flex-col items-center justify-center px-6 py-12">
+        
+        <header class="mb-12">
+            <div class="flex items-center justify-center gap-3 text-brand-slate font-bold text-xl tracking-tight">
+                <svg class="w-8 h-8 text-brand-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <span>Automation for Balance</span>
+            </div>
+        </header>
+
+        <main class="text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-slate mb-6 tracking-tight leading-tight">
+                Welcome to Automation for Balance.
+            </h1>
+            
+            <h2 class="text-lg md:text-xl text-brand-text mb-10 leading-relaxed max-w-2xl mx-auto font-normal">
+                We provide high-end bookkeeping, systems automation, and fractional controller services to help you scale with clarity.
+            </h2>
+            
+            <a href="https://automationforbalance.com" 
+               class="inline-block bg-brand-teal hover:bg-brand-tealHover text-white font-semibold py-4 px-10 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-in-out focus:outline-none focus:ring-4 focus:ring-teal-500/30">
+                Visit Our Official Website
+            </a>
+        </main>
+        
+    </div>
+
+    <footer class="w-full py-8 px-6 border-t border-slate-200 bg-white">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
+            <p class="mb-4 md:mb-0">&copy; 2026 Automation for Balance. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="https://automationforbalance.com/privacy-policy" class="hover:text-brand-teal transition-colors duration-150">Privacy Policy</a>
+                <a href="https://automationforbalance.com" class="hover:text-brand-teal transition-colors duration-150">Main Website</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
